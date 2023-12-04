@@ -28,6 +28,7 @@ module.exports = {
   rules: {
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
-    "react/prop-types": 2
+    "react/prop-types": 0,
+    "no-unused-vars": ["error"]
   },
 };
