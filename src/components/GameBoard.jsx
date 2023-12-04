@@ -1,4 +1,3 @@
-
 export default function GameBoard({ onSelectSquare, board }) {
   // const [gameBoard, setGameBoard] = useState(initialGameBoard);
 
@@ -20,6 +19,7 @@ export default function GameBoard({ onSelectSquare, board }) {
             {row.map((playerSymbol, colIndex) => (
               <li key={colIndex}>
                 <button
+                  type="button"
                   onClick={() => onSelectSquare(rowIndex, colIndex)}
                   disabled={playerSymbol !== null}
                 >
